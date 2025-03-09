@@ -1,11 +1,12 @@
 import React from "react";
-import Navigation from "./components/Navbar";
-import Hero from "./components/Hero";
+import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navigation from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 
 function App() {

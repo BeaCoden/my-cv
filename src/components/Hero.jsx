@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "../cvData.json";
+import data from "../cvData.json";import "../App.css";
 
 const Hero = () => {
   const { name, title, location, profile_image } = data;

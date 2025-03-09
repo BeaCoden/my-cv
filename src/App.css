@@ -1,38 +1,101 @@
-.App {
+/* App.css */
+
+/* Allgemeine Resets/Grundstyles */
+body {
+  margin: 0;
+  background-color: #f8f9fa; /* Sehr helles Grau, wirkt modern und minimalistisch */
+  color: #212529; /* Standard Bootstrap Textfarbe (dunkles Grau) */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Überschriften */
+h1, h2, h3, h4, h5, h6 {
+  color: #0d6efd; /* Ein Bootstrap-Blau als Akzentfarbe */
+  margin-bottom: 1rem;
+}
+
+/* Standard-Absatztext */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Navbar-Anpassungen (optional) */
+.navbar {
+  margin-bottom: 0;
+  /* Du könntest z.B. einen leicht anderen Hintergrund wählen:
+     background-color: #0d6efd;
+     und variant="dark" beibehalten */
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e9ecef; /* Helles Grau für Kontrast */
+  padding: 4rem 0; /* Genug Abstand nach oben/unten */
+  text-align: left; /* Du kannst auch 'center' wählen */
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero h3 {
+  font-size: 1.25rem;
+  color: #6c757d; /* Dezenteres Grau */
+}
+.hero img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+/* Section-Container (About, Skills, etc.) */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Listen in Skills, etc. */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Cards im Portfolio */
+.card {
+  border: none; /* Kein Rahmen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+.card-title {
+  color: #0d6efd;
+}
+.card-subtitle {
+  color: #6c757d;
+}
+.card-text {
+  color: #212529;
+}
+
+/* Kontaktlinks (optional Hover-Effekt) */
+#contact a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer (falls du einen anlegst) */
+footer {
+  background-color: #0d6efd;
+  color: #fff;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 1rem 0;
 }
