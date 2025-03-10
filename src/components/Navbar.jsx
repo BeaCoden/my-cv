@@ -8,11 +8,13 @@ const Navigation = () => {
 
   return (
     <Navbar
+      className={!isOpen ? "navbar-closed" : ""}
+      sticky="top"
       bg="dark"
       variant="dark"
       expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Mein CV</Navbar.Brand>
+        <Navbar.Brand href="#home">🔵 Bea Pitzschke JUNIOR FRONTEND DEVELOPER</Navbar.Brand>
         <div className="custom-toggle">
           <Hamburger
             toggled={isOpen}
