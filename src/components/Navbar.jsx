@@ -13,8 +13,14 @@ const Navigation = () => {
       bg="dark"
       variant="dark"
       expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">🔵 Bea Pitzschke JUNIOR FRONTEND DEVELOPER</Navbar.Brand>
+      <Container className="d-flex justify-content-between align-items-center">
+        <Navbar.Brand
+          href="#home"
+          className="navbar-brand-custom">
+          <div className="brand-name">🔵 Bea Pitzschke</div>
+          <div className="brand-title">JUNIOR FRONTEND DEVELOPER</div>
+        </Navbar.Brand>
+
         <div className="custom-toggle">
           <Hamburger
             toggled={isOpen}
@@ -25,7 +31,7 @@ const Navigation = () => {
 
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className={isOpen ? "show" : ""}>
+          className={isOpen ? "show ms-auto" : "ms-auto"}>
           <Nav className="ml-auto">
             <Nav.Link
               href="#about"
