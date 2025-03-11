@@ -25,15 +25,29 @@ p {
   margin-bottom: 0;
   padding: 0;
   background-color: #0d6efd;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar-brand-custom {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin-right: 1rem;
 }
 
-.brand-name, .brand-title {
+.brand-name,
+.brand-title {
+  display: inline-block;
   white-space: nowrap;
+  text-align: left;
+}
+
+.brand-name {
+  font-size: 1.75rem;
+}
+.brand-title {
+  font-size: .95rem;
 }
 
 
@@ -118,7 +132,9 @@ footer {
 
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1025px;
+    padding: 0%;
+    margin: 0%;
   }
 }
 
@@ -136,5 +152,16 @@ footer {
   .navbar-closed {
     filter: brightness(1.1);
     transition: filter 0.3s ease;
+  }
+}
+
+@media (min-width: 991.92px) {
+  .custom-toggle {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end;
   }
 }

@@ -13,7 +13,7 @@ const Navigation = () => {
       bg="dark"
       variant="dark"
       expand="lg">
-      <Container className="d-flex justify-content-between align-items-center">
+      <Container className="container-custom">
         <Navbar.Brand
           href="#home"
           className="navbar-brand-custom">
@@ -32,7 +32,7 @@ const Navigation = () => {
         <Navbar.Collapse
           id="basic-navbar-nav"
           className={isOpen ? "show ms-auto" : "ms-auto"}>
-          <Nav className="ml-auto">
+          <Nav>
             <Nav.Link
               href="#about"
               onClick={() => setOpen(false)}>
