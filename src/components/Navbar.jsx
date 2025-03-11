@@ -10,8 +10,6 @@ const Navigation = () => {
     <Navbar
       className={!isOpen ? "navbar-closed" : ""}
       sticky="top"
-      bg="dark"
-      variant="dark"
       expand="lg">
       <Container className="container-custom">
         <Navbar.Brand
@@ -38,10 +36,26 @@ const Navigation = () => {
               onClick={() => setOpen(false)}>
               Über mich
             </Nav.Link>
+
             <Nav.Link
               href="#portfolio"
               onClick={() => setOpen(false)}>
               Portfolio
+            </Nav.Link>
+            <Nav.Link
+              href="#experience"
+              onClick={() => setOpen(false)}>
+              Erfahrung
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              onClick={() => setOpen(false)}>
+              Skills
+            </Nav.Link>
+            <Nav.Link
+              href="#education"
+              onClick={() => setOpen(false)}>
+              Abschlüsse
             </Nav.Link>
             <Nav.Link
               href="#contact"
