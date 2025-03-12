@@ -1,13 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Navigation from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
+import "./App.css";
+import Navigation from "./areas/Navbar";
+import Hero from "./areas/Hero";
+import About from "./areas/About";
+import Portfolio from "./areas/Portfolio";
+import Experience from "./areas/Experience";
+import Education from "./areas/Education";
+import Skills from "./areas/Skills";
+import Contact from "./areas/Contact";
 
 function App() {
   return (
