@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Sling as Hamburger } from "hamburger-react";
-import "../App.css";
+import styles from "./Navbar.module.css";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);

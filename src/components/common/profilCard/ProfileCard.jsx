@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import styles from "./ProfileCard.module.css";
 
 const ProfileCard = ({ image, name, title, onDownloadCV, onHireMe }) => {
   return (

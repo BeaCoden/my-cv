@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import data from "../cvData.json";
-import "../App.css";
+import data from "../../cvData.json";
+import styles from "./Portfolio.module.css";
 
 const Portfolio = () => {
   const { projects } = data;

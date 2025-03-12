@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "../cvData.json";
-import ProfileCard from "../components/common/ProfileCard";
-import "../App.css";
+import data from "../../cvData.json";
+import ProfileCard from "../../components/common/profilCard/ProfileCard";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   const { name, title, location, profile_image } = data;

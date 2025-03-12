@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "../cvData.json";
-import "../App.css";
+import data from "../../cvData.json";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
   const { phone, email, linkedin, github } = data;
