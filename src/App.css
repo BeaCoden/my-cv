@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #717477;
+  background-color: #e6dace;
   color: #212529;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -72,26 +72,6 @@ p {
   cursor: pointer;
 }
 
-.hero {
-  background-color: #e9ecef;
-  padding: 4rem 0;
-  text-align: left;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero h3 {
-  font-size: 1.25rem;
-  color: #6c757d;
-}
-
-.hero img {
-  max-width: 150px;
-  border-radius: 50%;
-}
 
 section {
   padding-top: 3rem;
