@@ -1,0 +1,27 @@
+/* Hero-Section soll 100% Höhe und Breite einnehmen */
+.heroSection {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Linke Hälfte */
+.leftHalf {
+  background-color: var( --background-light-beige-color);
+  display: flex; /* Damit wir zentrieren können */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rechte Hälfte */
+.rightHalf {
+  background-color: var(--background-light-blue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Damit Inhalte in der Mitte sind */
+.contentWrapper {
+  text-align: center;
+  max-width: 400px; /* Optional: Begrenzung der Breite */
+}

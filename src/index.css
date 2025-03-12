@@ -1,8 +1,12 @@
 :root {
   --primary-blue-light-color: #7296cb;
-  --background-beige-color: #b6aba0;
+
   --text-dark-grey-color: #212529;
   --text-light-grey-color: #59748f;
+
+  --background-beige-color: #b6aba0;
+  --background-light-beige-color: #f0e2d0;
+  --background-light-blue-color: #dce6f2;
 }
 
 body {

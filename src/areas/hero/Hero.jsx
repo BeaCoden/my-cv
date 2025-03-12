@@ -22,24 +22,37 @@ const Hero = () => {
   };
 
   return (
-    <section className="py-5 bg-light">
-      <Container>
-        <Row className="justify-content-center">
-          <Col md={6}>
-            <ProfileCard
-              image={profile_image}
-              name={name}
-              title={title}
-              onDownloadCV={handleDownloadCV}
-              onHireMe={handleHireMe}
-            />
-          </Col>
-        </Row>
-        <Row className="justify-content-center mt-3">
+    // Fluid Container und Volle Höhe
+    <section className={styles.heroSection}>
+      <Container
+        fluid
+        className="h-100">
+        <Row className="h-100">
+          {/* Linke Hälfte */}
           <Col
             md={6}
-            className="text-center">
-            <p>{location}</p>
+            className={styles.leftHalf}>
+            <div className={styles.contentWrapper}>
+              <ProfileCard
+                image={profile_image}
+                name={name}
+                title={title}
+                onDownloadCV={handleDownloadCV}
+                onHireMe={handleHireMe}
+              />
+              <p>{location}</p>
+            </div>
+          </Col>
+
+          {/* Rechte Hälfte */}
+          <Col
+            md={6}
+            className={styles.rightHalf}>
+            <div className={styles.contentWrapper}>
+              <h1>Hallo</h1>
+              <p>Wer ich bin & was ich mache</p>
+              {/* Hier könntest du z.B. Buttons oder weitere Infos platzieren */}
+            </div>
           </Col>
         </Row>
       </Container>
