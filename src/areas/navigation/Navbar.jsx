@@ -12,28 +12,24 @@ const Navigation = () => {
       expand="lg"
       className={styles.navbar}>
       <Container className={styles.containerCustom}>
-        {/* Brand links */}
         <Navbar.Brand
-          href="#home"
+          href="/src/areas/hero/Hero.jsx"
           className={styles.navbarBrandCustom}>
           <div className={styles.brandName}>🔵 Bea Pitzschke</div>
           <div className={styles.brandTitle}>JUNIOR FRONTEND DEVELOPER</div>
         </Navbar.Brand>
 
-        {/* Hamburger Icon (sichtbar nur unter 992px) */}
         <div className={styles.customToggle}>
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
-            color="#fff"
           />
         </div>
 
-        {/* Kollabierende Nav – Klasse wird je nach isOpen gesetzt */}
         <Navbar.Collapse
           id="basic-navbar-nav"
           className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
-          <Nav className="ms-auto">
+          <Nav>
             <Nav.Link
               href="#about"
               onClick={() => setOpen(false)}

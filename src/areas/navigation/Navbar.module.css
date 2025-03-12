@@ -1,18 +1,13 @@
 /* Navbar Grundstil */
 .navbar {
-  padding: 0.5rem 1rem;
-  background-color: #7296cb;
+  background-color:var(--background-beige-color);
+  flex-direction: column;
 }
 
-/* Container so anordnen, dass Marke und Navigation gleichmäßig verteilt werden */
 .containerCustom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  margin: 0;
 }
 
-/* Marke */
 .navbarBrandCustom {
   display: flex;
   flex-direction: column;
@@ -21,7 +16,7 @@
 
 .brandName,
 .brandTitle {
-  color: #fff;
+  color: var(--text-dark-grey-color);
   white-space: nowrap;
 }
 
@@ -33,51 +28,51 @@
   font-size: 0.95rem;
 }
 
-/* Hamburger-Icon (standardmäßig ausgeblendet) */
 .customToggle {
   display: none;
 }
 
-/* Standard NavLink-Stile */
 .navLink {
-  color: #fff;
+  color: var(--text-dark-grey-color);
   margin-right: 1rem;
   cursor: pointer;
 }
 
 .navLink:hover {
-  color: #383838;
+  color: var(--text-light-grey-color);
 }
 
-/* Standard Collapse (Desktop) – wird von Bootstrap genutzt */
 .navbarCollapse {
-  /* Auf Desktops wird das Collapse-Element automatisch sichtbar */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* Desktop: Kollabiertes Menü immer anzeigen */
 @media screen and (min-width: 992px) {
   .navbarCollapse {
     display: flex !important;
   }
 }
 
-/* Mobile / Tablet: Standardmäßig ausblenden */
 @media screen and (max-width: 991.98px) {
-  /* Hamburger-Icon einblenden */
+
   .customToggle {
     display: flex;
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 10000;
+    color: var(--text-dark-grey-color);
   }
 
-  /* Auf mobilen Geräten das Collapse-Element standardmäßig ausblenden */
+  .customToggle:hover {
+    color: var(--text-light-grey-color);
+  }
+
   .navbarCollapse {
     display: none;
   }
 
-  /* Wenn geöffnet, Overlay für die Nav-Links */
   .navbarCollapseShow {
     display: flex !important;
     position: fixed;
@@ -85,7 +80,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #f7ede2;
+    background-color: var(--background-beige-color);
     z-index: 9999;
     flex-direction: column;
     justify-content: center;
@@ -95,10 +90,13 @@
     transform: translateX(0);
   }
 
-  /* Menü-Links im Overlay anpassen */
   .navbarCollapseShow .navLink {
     font-size: 1.5rem;
     margin: 1rem 0;
-    color: #000;
+    color: var(--text-dark-grey-color);
+  }
+
+  .navbarCollapseShow .navLink:hover {
+    color: var(--text-light-grey-color);
   }
 }
