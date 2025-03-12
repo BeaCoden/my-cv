@@ -4,79 +4,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #b6aba0;
+  padding: 0;
+    background-color: #b6aba0;
   color: #212529;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-}
-
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-.card {
-  border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  color: #0d6efd;
-}
-
-.card-subtitle {
-  color: #6c757d;
-}
-
-.card-text {
-  color: #212529;
-}
-
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .container {
-    max-width: 1025px;
-    padding: 0%;
-    margin: 0%;
-  }
-
-  .custom-toggle {
-    display: none;
-  }
-
-  .navbar-collapse {
-    display: flex !important;
-    justify-content: flex-end;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-
-  .custom-toggle {
-    display: none;
-  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

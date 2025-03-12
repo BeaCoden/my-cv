@@ -1,80 +1,104 @@
+/* Navbar Grundstil */
 .navbar {
-  margin-bottom: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+  padding: 0.5rem 1rem;
   background-color: #7296cb;
 }
 
-.navbar-brand-custom {
+/* Container so anordnen, dass Marke und Navigation gleichmäßig verteilt werden */
+.containerCustom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Marke */
+.navbarBrandCustom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 1rem;
 }
 
-.nav-link {
+.brandName,
+.brandTitle {
   color: #fff;
-  margin-right: 1rem;
-}
-
-.nav-link:hover {
-  color: #383838;
-}
-
-.brand-name,
-.brand-title {
-  display: inline-block;
   white-space: nowrap;
-  text-align: left;
-  color: #fff;
 }
 
-.brand-name {
+.brandName {
   font-size: 1.75rem;
 }
 
-.brand-title {
-  font-size: .95rem;
+.brandTitle {
+  font-size: 0.95rem;
 }
 
-.custom-toggle {
-  display: flex;
-  align-items: center;
+/* Hamburger-Icon (standardmäßig ausgeblendet) */
+.customToggle {
+  display: none;
+}
+
+/* Standard NavLink-Stile */
+.navLink {
+  color: #fff;
+  margin-right: 1rem;
   cursor: pointer;
 }
 
+.navLink:hover {
+  color: #383838;
+}
 
+/* Standard Collapse (Desktop) – wird von Bootstrap genutzt */
+.navbarCollapse {
+  /* Auf Desktops wird das Collapse-Element automatisch sichtbar */
+}
 
+/* Desktop: Kollabiertes Menü immer anzeigen */
+@media screen and (min-width: 992px) {
+  .navbarCollapse {
+    display: flex !important;
+  }
+}
+
+/* Mobile / Tablet: Standardmäßig ausblenden */
 @media screen and (max-width: 991.98px) {
-  .navbar-collapse.show {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #7296cb;
-    z-index: 9999;
-    transition: transform 0.3s ease;
-    transform: translateX(0);
+  /* Hamburger-Icon einblenden */
+  .customToggle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
-  }
-
-  .navbar-collapse.show .nav-link {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-
-  .custom-toggle {
     position: fixed;
     top: 1rem;
     right: 1rem;
     z-index: 10000;
   }
 
+  /* Auf mobilen Geräten das Collapse-Element standardmäßig ausblenden */
+  .navbarCollapse {
+    display: none;
+  }
+
+  /* Wenn geöffnet, Overlay für die Nav-Links */
+  .navbarCollapseShow {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7ede2;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+  }
+
+  /* Menü-Links im Overlay anpassen */
+  .navbarCollapseShow .navLink {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #000;
+  }
 }

@@ -8,20 +8,20 @@ const Navigation = () => {
 
   return (
     <Navbar
-      className={!isOpen ? "navbar-closed" : ""}
       sticky="top"
-      expand="lg">
-      <Container className="container-custom">
+      expand="lg"
+      className={styles.navbar}>
+      <Container className={styles.containerCustom}>
         {/* Brand links */}
         <Navbar.Brand
           href="#home"
-          className="navbar-brand-custom">
-          <div className="brand-name">🔵 Bea Pitzschke</div>
-          <div className="brand-title">JUNIOR FRONTEND DEVELOPER</div>
+          className={styles.navbarBrandCustom}>
+          <div className={styles.brandName}>🔵 Bea Pitzschke</div>
+          <div className={styles.brandTitle}>JUNIOR FRONTEND DEVELOPER</div>
         </Navbar.Brand>
 
-        {/* Hamburger Icon rechts */}
-        <div className="custom-toggle">
+        {/* Hamburger Icon (sichtbar nur unter 992px) */}
+        <div className={styles.customToggle}>
           <Hamburger
             toggled={isOpen}
             toggle={setOpen}
@@ -29,39 +29,45 @@ const Navigation = () => {
           />
         </div>
 
-        {/* Nav-Collapse */}
+        {/* Kollabierende Nav – Klasse wird je nach isOpen gesetzt */}
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className={isOpen ? "show ms-auto" : "ms-auto"}>
-          <Nav>
+          className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
+          <Nav className="ms-auto">
             <Nav.Link
               href="#about"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Über mich
             </Nav.Link>
             <Nav.Link
               href="#portfolio"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Portfolio
             </Nav.Link>
             <Nav.Link
               href="#experience"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Erfahrung
             </Nav.Link>
             <Nav.Link
               href="#skills"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Skills
             </Nav.Link>
             <Nav.Link
               href="#education"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Abschlüsse
             </Nav.Link>
             <Nav.Link
               href="#contact"
-              onClick={() => setOpen(false)}>
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
               Kontakt
             </Nav.Link>
           </Nav>
