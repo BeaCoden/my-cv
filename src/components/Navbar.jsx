@@ -12,6 +12,7 @@ const Navigation = () => {
       sticky="top"
       expand="lg">
       <Container className="container-custom">
+        {/* Brand links */}
         <Navbar.Brand
           href="#home"
           className="navbar-brand-custom">
@@ -19,6 +20,7 @@ const Navigation = () => {
           <div className="brand-title">JUNIOR FRONTEND DEVELOPER</div>
         </Navbar.Brand>
 
+        {/* Hamburger Icon rechts */}
         <div className="custom-toggle">
           <Hamburger
             toggled={isOpen}
@@ -27,6 +29,7 @@ const Navigation = () => {
           />
         </div>
 
+        {/* Nav-Collapse */}
         <Navbar.Collapse
           id="basic-navbar-nav"
           className={isOpen ? "show ms-auto" : "ms-auto"}>
@@ -36,7 +39,6 @@ const Navigation = () => {
               onClick={() => setOpen(false)}>
               Über mich
             </Nav.Link>
-
             <Nav.Link
               href="#portfolio"
               onClick={() => setOpen(false)}>
