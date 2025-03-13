@@ -4,17 +4,14 @@ import styles from "./ProfileCard.module.css";
 
 const ProfileCard = ({ image, name, title, onDownloadCV, onHireMe }) => {
   return (
-    <Card
-      className="text-center p-3"
-      style={{ maxWidth: "20rem", margin: "0 auto" }}>
+    <Card className={`text-center p-3 ${styles.cardContainer}`}>
       {/* Profilbild oben, rund dargestellt */}
-      <div style={{ width: "150px", height: "150px", margin: "0 auto" }}>
+      <div className={styles.imageWrapper}>
         <Card.Img
           variant="top"
           src={image}
           alt={name}
-          className="rounded-circle"
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          className={`rounded-circle ${styles.profileImage}`}
         />
       </div>
 
