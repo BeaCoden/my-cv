@@ -1,0 +1,20 @@
+.breadcrumbContainer {
+  background-color: var(--background-light-beige-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
+}
+
+.breadcrumbItem {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.breadcrumbItem a {
+  color: var(--primary-blue-light-color);
+  text-decoration: none;
+}
+
+.breadcrumbItem a:hover {
+  text-decoration: underline;
+}
