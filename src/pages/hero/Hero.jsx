@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import data from "../../cvData.json";
 import ProfileCard from "../../components/profilCard/ProfileCard";
+import About from "../about/About";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
@@ -49,9 +50,7 @@ const Hero = () => {
             md={6}
             className={styles.rightHalf}>
             <div className={styles.contentWrapper}>
-              <h1>Hallo</h1>
-              <p>Wer ich bin & was ich mache</p>
-              {/* Hier könntest du z.B. Buttons oder weitere Infos platzieren */}
+              <About />
             </div>
           </Col>
         </Row>

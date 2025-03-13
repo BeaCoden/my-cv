@@ -5,7 +5,6 @@ import "./App.css";
 import Navigation from "./components/navbar/Navbar";
 import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs";
 import Hero from "./pages/hero/Hero";
-import About from "./pages/about/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Experience from "./pages/experience/Experience";
 import Education from "./pages/education/Education";
@@ -29,10 +28,6 @@ function App() {
         <Route
           path="/"
           element={<Hero />}
-        />
-        <Route
-          path="/about"
-          element={<About />}
         />
         <Route
           path="/portfolio"

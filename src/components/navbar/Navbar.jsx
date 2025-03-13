@@ -31,12 +31,6 @@ const Navigation = () => {
           className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
           <Nav>
             <Nav.Link
-              href="/about"
-              onClick={() => setOpen(false)}
-              className={styles.navLink}>
-              Über mich
-            </Nav.Link>
-            <Nav.Link
               href="/portfolio"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
