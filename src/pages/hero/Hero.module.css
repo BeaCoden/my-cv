@@ -1,15 +1,20 @@
-/* Hero-Section soll 100% Höhe und Breite einnehmen */
 .heroSection {
-  width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Linke Hälfte */
 .leftHalf {
-  background-color: var( --background-light-beige-color);
-  display: flex; /* Damit wir zentrieren können */
+  background-color: var(--background-light-beige-color);
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 /* Rechte Hälfte */
@@ -18,10 +23,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
-/* Damit Inhalte in der Mitte sind */
+/* Inhalt mittig zentrieren */
 .contentWrapper {
   text-align: center;
-  max-width: 400px; /* Optional: Begrenzung der Breite */
+  max-width: 400px;
+  margin: auto;
 }

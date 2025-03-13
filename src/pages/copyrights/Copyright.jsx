@@ -34,8 +34,8 @@ const Copyright = () => {
 
       <h2>5. Datenschutz</h2>
       <p>
-        Diese Webseite erhebt keine personenbezogenen Daten (z.&nbsp;B. über Kontaktformulare oder Tracking), außer wenn
-        du mir aktiv eine E-Mail sendest. In diesem Fall werden deine Daten nur zur Bearbeitung deiner Anfrage verwendet
+        Diese Webseite erhebt keine personenbezogenen Daten (z.B. über Kontaktformulare oder Tracking), außer wenn du
+        mir aktiv eine E-Mail sendest. In diesem Fall werden deine Daten nur zur Bearbeitung deiner Anfrage verwendet
         und nicht an Dritte weitergegeben.
       </p>
 

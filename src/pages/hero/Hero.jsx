@@ -9,24 +9,22 @@ const Hero = () => {
   const { name, title, profile_image, location } = data;
 
   const handleDownloadCV = () => {
-    // Download und Druckfunktion für den Lebenslauf
     console.log("CV-Download / Print ausgelöst");
   };
 
   const handleHireMe = () => {
-    //  Mailto-Option triggern
     console.log("Hire Me geklickt");
   };
 
   return (
-    // Fluid Container und Volle Höhe
     <section className={styles.heroSection}>
       <Container
         fluid
-        className="h-100">
-        <Row className="h-100">
+        className="p-0 h-100">
+        <Row className="h-100 m-0 p-0 flex-wrap">
           {/* Linke Hälfte */}
           <Col
+            xs={12}
             md={6}
             className={styles.leftHalf}>
             <div className={styles.contentWrapper}>
@@ -43,6 +41,7 @@ const Hero = () => {
 
           {/* Rechte Hälfte */}
           <Col
+            xs={12}
             md={6}
             className={styles.rightHalf}>
             <div className={styles.contentWrapper}>

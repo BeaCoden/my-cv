@@ -11,7 +11,7 @@ const ProfileCard = ({ image, name, title, location, onDownloadCV, onHireMe }) =
           variant="top"
           src={image}
           alt={name}
-          className={`rounded-circle ${styles.profileImage}`}
+          className={styles.profileImage}
         />
       </div>
 
