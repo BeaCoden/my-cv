@@ -13,7 +13,7 @@ const Navigation = () => {
       className={styles.navbar}>
       <Container className={styles.containerCustom}>
         <Navbar.Brand
-          href="/src/areas/hero/Hero.jsx"
+          href="/"
           className={styles.navbarBrandCustom}>
           <div className={styles.brandName}>🔵 Bea Pitzschke</div>
           <div className={styles.brandTitle}>JUNIOR FRONTEND DEVELOPER</div>
