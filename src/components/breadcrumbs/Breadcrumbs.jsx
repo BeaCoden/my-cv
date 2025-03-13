@@ -13,6 +13,15 @@ const Breadcrumbs = () => {
     navigate("/");
   };
 
+  const breadcrumbNames = {
+    about: "Über mich",
+    portfolio: "Portfolio",
+    experience: "Erfahrung",
+    education: "Abschlüsse",
+    skills: "Skills",
+    contact: "Kontakt",
+  };
+
   return (
     <Container className="mt-3">
       <Row className="align-items-center">
@@ -29,13 +38,14 @@ const Breadcrumbs = () => {
             </Breadcrumb.Item>
             {pathnames.map((value, index) => {
               const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+              const displayName = breadcrumbNames[value] || value;
               return (
                 <Breadcrumb.Item
                   key={to}
                   as={Link}
                   to={to}
                   className={styles.breadcrumbItem}>
-                  {value}
+                  {displayName}
                 </Breadcrumb.Item>
               );
             })}
