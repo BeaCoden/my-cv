@@ -31,37 +31,37 @@ const Navigation = () => {
           className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
           <Nav>
             <Nav.Link
-              href="#about"
+              href="/about"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Über mich
             </Nav.Link>
             <Nav.Link
-              href="#portfolio"
+              href="/portfolio"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Portfolio
             </Nav.Link>
             <Nav.Link
-              href="#experience"
+              href="/experience"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Erfahrung
             </Nav.Link>
             <Nav.Link
-              href="#skills"
+              href="/skills"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#education"
+              href="/education"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Abschlüsse
             </Nav.Link>
             <Nav.Link
-              href="#contact"
+              href="/contact"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Kontakt
