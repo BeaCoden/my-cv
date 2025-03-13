@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import data from "../../cvData.json";
 import ProfileCard from "../../components/profilCard/ProfileCard";
 import About from "../about/About";
@@ -7,12 +8,10 @@ import styles from "./Hero.module.css";
 
 const Hero = () => {
   const { name, title, location, profile_image } = data;
+  const navigate = useNavigate();
 
-  // Beispiel-Handler für die Buttons
   const handleDownloadCV = () => {
-    // Hier kannst du z. B. ein PDF öffnen oder herunterladen
-    // window.open("/pfad/zu/deinemCV.pdf");
-    // oder Druck-Dialog: window.print();
+    navigate("/resume");
     console.log("CV-Download / Print ausgelöst");
   };
 

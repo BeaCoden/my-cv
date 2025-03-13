@@ -1,0 +1,11 @@
+.resumeSection {
+  padding: 2rem 0;
+  background-color: var(--background-light-beige-color);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--primary-blue-light-color);
+}

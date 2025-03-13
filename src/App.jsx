@@ -10,6 +10,7 @@ import Experience from "./pages/experience/Experience";
 import Education from "./pages/education/Education";
 import Skills from "./pages/skills/Skills";
 import Contact from "./pages/contact/Contact";
+import Resume from "./components/resume/Resume";
 
 const ConditionalBreadcrumbs = () => {
   const location = useLocation();
@@ -48,6 +49,10 @@ function App() {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+        <Route
+          path="/resume"
+          element={<Resume />}
         />
       </Routes>
     </Router>
