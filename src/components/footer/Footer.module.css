@@ -1,6 +1,59 @@
-footer {
-  background-color: #0d6efd;
-  color: #fff;
-  text-align: center;
+.footer {
+  background-color: #fff;
   padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #212529;
+}
+
+.footerLeft {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.footerRight {
+  text-align: right;
+}
+
+.contactBlock {
+  margin-bottom: 0.5rem;
+}
+
+.contactTitle {
+  font-weight: bold;
+}
+
+.contactInfo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.socialIcons a {
+  color: var(--primary-blue-light-color);
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  text-decoration: underline;
+}
+
+.copyrightLink {
+  color: var(--primary-blue-light-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyrightLink:hover {
+  text-decoration: underline;
 }

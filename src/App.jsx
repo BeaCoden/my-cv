@@ -10,7 +10,9 @@ import Experience from "./pages/experience/Experience";
 import Education from "./pages/education/Education";
 import Skills from "./pages/skills/Skills";
 import Contact from "./pages/contact/Contact";
+import Copyright from "./pages/copyrights/Copyright";
 import Resume from "./components/resume/Resume";
+import Footer from "./components/footer/Footer";
 
 const ConditionalBreadcrumbs = () => {
   const location = useLocation();
@@ -54,7 +56,12 @@ function App() {
           path="/resume"
           element={<Resume />}
         />
+        <Route
+          path="/copyright"
+          element={<Copyright />}
+        />
       </Routes>
+      <Footer />
     </Router>
   );
 }
