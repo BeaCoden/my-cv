@@ -31,28 +31,22 @@ const Navigation = () => {
           className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
           <Nav>
             <Nav.Link
+              href="/"
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
+              Über mich
+            </Nav.Link>
+            <Nav.Link
+              href="/resume"
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
+              Lebenslauf
+            </Nav.Link>
+            <Nav.Link
               href="/portfolio"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Portfolio
-            </Nav.Link>
-            <Nav.Link
-              href="/experience"
-              onClick={() => setOpen(false)}
-              className={styles.navLink}>
-              Erfahrung
-            </Nav.Link>
-            <Nav.Link
-              href="/skills"
-              onClick={() => setOpen(false)}
-              className={styles.navLink}>
-              Skills
-            </Nav.Link>
-            <Nav.Link
-              href="/education"
-              onClick={() => setOpen(false)}
-              className={styles.navLink}>
-              Abschlüsse
             </Nav.Link>
             <Nav.Link
               href="/contact"

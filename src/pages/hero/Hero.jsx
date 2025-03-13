@@ -1,23 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import data from "../../cvData.json";
 import ProfileCard from "../../components/profilCard/ProfileCard";
 import About from "../about/About";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
-  const { name, title, location, profile_image } = data;
-  const navigate = useNavigate();
+  const { name, title, profile_image, location } = data;
 
   const handleDownloadCV = () => {
-    navigate("/resume");
+    // Download und Druckfunktion für den Lebenslauf
     console.log("CV-Download / Print ausgelöst");
   };
 
   const handleHireMe = () => {
-    // Hier kannst du z. B. ein Kontaktformular öffnen
-    // oder eine Mailto-Option triggern
+    //  Mailto-Option triggern
     console.log("Hire Me geklickt");
   };
 
@@ -37,10 +34,10 @@ const Hero = () => {
                 image={profile_image}
                 name={name}
                 title={title}
+                location={location}
                 onDownloadCV={handleDownloadCV}
                 onHireMe={handleHireMe}
               />
-              <p>{location}</p>
             </div>
           </Col>
 
