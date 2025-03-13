@@ -9,8 +9,8 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Container>
-        <Row className="justify-content-between align-items-center">
-          {/* Linke Spalte: Copyright-Link */}
+        <Row>
+          {/* Linke Spalte: Copyright */}
           <Col
             xs={12}
             md={4}
@@ -22,21 +22,11 @@ const Footer = () => {
             </Link>
           </Col>
 
-          {/* Rechte Spalte: Kontakt & Socials */}
+          {/* Mittlere Spalte: Social Media Icons */}
           <Col
             xs={12}
             md={4}
-            className={styles.footerRight}>
-            <div className={styles.contactBlock}>
-              <span className={styles.contactTitle}>Telefon: </span>
-              <span className={styles.contactInfo}>{cvData.phone}</span>
-            </div>
-            <div className={styles.contactBlock}>
-              <span className={styles.contactTitle}>E-Mail: </span>
-              <span className={styles.contactInfo}>
-                <a href={`mailto:${cvData.email}`}>{cvData.email}</a>
-              </span>
-            </div>
+            className={styles.footerMiddle}>
             <div className={styles.socialIcons}>
               <a
                 href={cvData.linkedin}
@@ -52,6 +42,23 @@ const Footer = () => {
                 title="GitHub">
                 <FaGithub />
               </a>
+            </div>
+          </Col>
+
+          {/* Rechte Spalte: Kontakt */}
+          <Col
+            xs={12}
+            md={4}
+            className={styles.footerRight}>
+            <div className={styles.contactBlock}>
+              <span className={styles.contactTitle}>Telefon: </span>
+              <span className={styles.contactInfo}>{cvData.phone}</span>
+            </div>
+            <div className={styles.contactBlock}>
+              <span className={styles.contactTitle}>E-Mail: </span>
+              <span className={styles.contactInfo}>
+                <a href={`mailto:${cvData.email}`}>{cvData.email}</a>
+              </span>
             </div>
           </Col>
         </Row>
