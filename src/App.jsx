@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./index.css";
 
 import Navigation from "./components/navbar/Navbar";
 import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs";
