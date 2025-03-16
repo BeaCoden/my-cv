@@ -37,16 +37,22 @@ const Navigation = () => {
               Über mich
             </Nav.Link>
             <Nav.Link
+              href="/portfolio"
+              onClick={() => setOpen(false)}
+              className={styles.navLink}>
+              Portfolio
+            </Nav.Link>
+            <Nav.Link
               href="/resume"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
               Lebenslauf
             </Nav.Link>
             <Nav.Link
-              href="/portfolio"
+              href="/skills"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Portfolio
+              Skills
             </Nav.Link>
             <Nav.Link
               href="/contact"
