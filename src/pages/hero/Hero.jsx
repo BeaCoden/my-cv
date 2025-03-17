@@ -12,7 +12,7 @@ const Hero = () => {
     console.log("CV-Download / Print ausgelöst");
   };
 
-  const handleHireMe = () => {
+  const handlePrintCV = () => {
     console.log("Hire Me geklickt");
   };
 
@@ -34,7 +34,7 @@ const Hero = () => {
                 title={title}
                 location={location}
                 onDownloadCV={handleDownloadCV}
-                onHireMe={handleHireMe}
+                onPrintCV={handlePrintCV}
               />
             </div>
           </Col>
