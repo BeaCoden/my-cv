@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import data from "../../cvData.json";
+import { MdWeb } from "react-icons/md";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () => {
@@ -11,7 +12,10 @@ const Portfolio = () => {
       id="portfolio"
       className="py-5">
       <Container>
-        <h2>Projekte</h2>
+        <h2>
+          <MdWeb className={styles.icon} />
+          Portfolio
+        </h2>
         <Row>
           {projects.map((project, index) => (
             <Col

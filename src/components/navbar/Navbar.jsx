@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Sling as Hamburger } from "hamburger-react";
+import { BsCodeSlash } from "react-icons/bs";
 import styles from "./Navbar.module.css";
 
 const Navigation = () => {
@@ -15,7 +16,10 @@ const Navigation = () => {
         <Navbar.Brand
           href="/"
           className={styles.navbarBrandCustom}>
-          <div className={styles.brandName}>🔵 Bea Pitzschke</div>
+          <div className={styles.brandName}>
+            <BsCodeSlash />
+            Bea Pitzschke
+          </div>
           <div className={styles.brandTitle}>JUNIOR FRONTEND DEVELOPER</div>
         </Navbar.Brand>
 
