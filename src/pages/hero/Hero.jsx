@@ -9,20 +9,19 @@ const Hero = () => {
   const { name, title, profile_image, location } = data;
 
   const handleDownloadCV = () => {
-    console.log("CV-Download / Print ausgelöst");
+    console.log("triggered download btn");
   };
 
   const handlePrintCV = () => {
-    console.log("Hire Me geklickt");
+    console.log("triggered drucken btn");
   };
 
   return (
-    <section className={styles.heroSection}>
+    <section>
       <Container
         fluid
         className="p-0 h-100">
         <Row className="h-100 m-0 p-0 flex-wrap">
-          {/* Linke Hälfte */}
           <Col
             xs={12}
             md={6}
@@ -38,8 +37,6 @@ const Hero = () => {
               />
             </div>
           </Col>
-
-          {/* Rechte Hälfte */}
           <Col
             xs={12}
             md={6}
