@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import styles from "./ProfileCard.module.css";
 
-const ProfileCard = ({ image, name, title, location, onDownloadCV, onPrintCV }) => {
+const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
   return (
     <Card className={`text-center p-3 ${styles.cardContainer}`}>
       <div className={styles.imageWrapper}>
@@ -13,11 +13,8 @@ const ProfileCard = ({ image, name, title, location, onDownloadCV, onPrintCV }) 
           className={styles.profileImage}
         />
       </div>
-
       <Card.Body>
-        <Card.Title className="mt-3">{name}</Card.Title>
-        <Card.Subtitle className="text-muted mb-4">{title}</Card.Subtitle>
-        <Card.Text>{location}</Card.Text>
+        <Card.Title className="mt-3 mb-3">{name}</Card.Title>
         <div className="d-flex justify-content-center">
           <Button
             variant="primary"
