@@ -15,7 +15,7 @@
 
 .brandName,
 .brandTitle {
-  color: var(--text-dark-grey-color);
+  color: var(--font-dark-grey-color);
   white-space: nowrap;
 }
 
@@ -36,13 +36,13 @@
 }
 
 .navLink {
-  color: var(--text-dark-grey-color);
+  color: var(--font-dark-grey-color);
   margin-right: 1rem;
   cursor: pointer;
 }
 
 .navLink:hover {
-  color: var(--text-light-grey-color);
+  color: var(--font-light-grey-color);
 }
 
 .navbarCollapse {
@@ -74,11 +74,11 @@
     top: 1rem;
     right: 1rem;
     z-index: 10000;
-    color: var(--text-dark-grey-color);
+    color: var(--font-dark-grey-color);
   }
 
   .customToggle:hover {
-    color: var(--text-light-grey-color);
+    color: var(--font-light-grey-color);
   }
 
   .navbarCollapse {
@@ -105,10 +105,10 @@
   .navbarCollapseShow .navLink {
     font-size: 1.5rem;
     margin: 1rem 0;
-    color: var(--text-dark-grey-color);
+    color: var(--font-dark-grey-color);
   }
 
   .navbarCollapseShow .navLink:hover {
-    color: var(--text-light-grey-color);
+    color: var(--font-light-grey-color);
   }
 }

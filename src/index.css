@@ -6,8 +6,6 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -19,15 +17,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
-  --primary-blue-light-color: #7296cb;
+/* :root {
+  --default-blue-color: #6d9fff;
+  --default-grey-color: #6c757d;
+  --default-white-color: #ffffff;
+  --default-beige-color: #f8f9fa;
 
-  --text-dark-grey-color: #212529;
-  --text-light-grey-color: #59748f;
+  --font-dark-grey-color: #212529;
+  --font-light-grey-color: #59748f;
 
   --background-beige-color: #b6aba0;
   --background-light-beige-color: #f0e2d0;
   --background-light-blue-color: #dce6f2;
+  --background-blue-color: #7296cb;
+
+  --button-blue-color: #007bff;
+  --button-blue-hover-color: #0056b3;
+  --button-blue-border-color: #0056b3;
+
+  --detail-blue-color: #6d9fff;
+  --deatil-grey-color: #6c757d;
+  --detail-white-color: #ffffff;
+  --detail-beige-color: #f8f9fa;
+} */
+
+:root {
+  /* Standardfarben (Light Mode) */
+  --default-blue-color: #0052cc;         /* Ein tiefes Royal Blue als Hauptakzent */
+  --default-grey-color: #8a8d91;          /* Ein neutraleres Grau */
+  --default-white-color: #ffffff;         /* Weiß bleibt unverändert */
+  --default-beige-color: #fdf5e6;         /* Ein warmes Off-White (Old Lace) */
+
+  --font-dark-grey-color: #333333;        /* Dunkler, gut lesbarer Text */
+  --font-light-grey-color: #757575;       /* Für sekundären Text */
+
+  --background-beige-color: #e8e3d3;       /* Warmer, sanfter Hintergrund für Bereiche */
+  --background-light-beige-color: #f9f6f1; /* Sehr heller Beige-Ton, ideal für Karten */
+  --background-light-blue-color: #d0e1ff;  /* Sehr sanftes Blau als Akzent */
+  --background-blue-color: #0052cc;       /* Konsistent zum Hauptakzent */
+
+  --button-blue-color: #0052cc;           /* Einheitlich mit dem Hauptakzent */
+  --button-blue-hover-color: #003a99;     /* Dunklerer Blauton beim Hover */
+  --button-blue-border-color: #003a99;    /* Für klare Button-Konturen */
+
+  --detail-blue-color: #0052cc;           /* Einheitlich mit dem Hauptakzent */
+  --deatil-grey-color: #8a8d91;           /* Passend zum Default-Grey */
+  --detail-white-color: #ffffff;          /* Weiß */
+  --detail-beige-color: #fdf5e6;          /* Einheitlich mit dem Default-Beige */
 }
 
 #root {
@@ -44,6 +80,5 @@ body {
 
 .mainContent {
   flex: 1;
-  background-color: var(--background-light-blue-color);
   padding: 35px;
 }
