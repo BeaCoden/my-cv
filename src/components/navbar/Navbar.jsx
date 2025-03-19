@@ -23,6 +23,7 @@ const Navigation = () => {
           <div className={styles.brandTitle}>JUNIOR FRONTEND DEVELOPER</div>
         </Navbar.Brand>
 
+        {/* Hamburger Button */}
         <div className={styles.customToggle}>
           <Hamburger
             toggled={isOpen}
@@ -30,6 +31,7 @@ const Navigation = () => {
           />
         </div>
 
+        {/* Dynamische Klasse: zu /navbarCollapseShow oder /navbarCollapse */}
         <Navbar.Collapse
           id="basic-navbar-nav"
           className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>

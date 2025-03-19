@@ -17,30 +17,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* :root {
-  --default-blue-color: #6d9fff;
-  --default-grey-color: #6c757d;
-  --default-white-color: #ffffff;
-  --default-beige-color: #f8f9fa;
-
-  --font-dark-grey-color: #212529;
-  --font-light-grey-color: #59748f;
-
-  --background-beige-color: #b6aba0;
-  --background-light-beige-color: #f0e2d0;
-  --background-light-blue-color: #dce6f2;
-  --background-blue-color: #7296cb;
-
-  --button-blue-color: #007bff;
-  --button-blue-hover-color: #0056b3;
-  --button-blue-border-color: #0056b3;
-
-  --detail-blue-color: #6d9fff;
-  --deatil-grey-color: #6c757d;
-  --detail-white-color: #ffffff;
-  --detail-beige-color: #f8f9fa;
-} */
-
 :root {
   /* Standardfarben (Light Mode) */
   --default-blue-color: #0052cc;         /* Ein tiefes Royal Blue als Hauptakzent */
