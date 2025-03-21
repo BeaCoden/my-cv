@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
 }
 
 :root {
@@ -56,5 +57,4 @@ body {
 
 .mainContent {
   flex: 1;
-  padding: 35px;
 }

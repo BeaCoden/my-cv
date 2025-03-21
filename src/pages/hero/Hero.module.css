@@ -19,3 +19,13 @@
   max-width: 400px;
   margin: auto;
 }
+
+ @media screen and (max-width: 991.98px) {
+
+  .leftHalf {
+
+  }
+
+
+
+}

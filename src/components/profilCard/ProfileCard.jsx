@@ -1,10 +1,12 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import cvData from "../../cvData.json";
 import styles from "./ProfileCard.module.css";
 
 const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
   return (
-    <Card className={`text-center p-3 ${styles.cardContainer}`}>
+    <Card className={styles.cardContainer}>
       <div className={styles.imageWrapper}>
         <Card.Img
           variant="top"
@@ -20,16 +22,39 @@ const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
             variant="primary"
             className="mx-2"
             onClick={onDownloadCV}>
-            download
+            CV download
           </Button>
           <Button
             variant="secondary"
             className="mx-2"
             onClick={onPrintCV}>
-            drucken
+            CV drucken
           </Button>
         </div>
       </Card.Body>
+      <Card.Footer className={styles.cardFooter}>
+        <a
+          href={cvData.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn">
+          <FaLinkedinIn />
+        </a>
+        <a
+          href={cvData.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub">
+          <FaGithub />
+        </a>
+        <a
+          href={`mailto:${cvData.email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Email">
+          <FaEnvelope />
+        </a>
+      </Card.Footer>
     </Card>
   );
 };
