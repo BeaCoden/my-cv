@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaLinkedinIn, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 import cvData from "../../cvData.json";
 import styles from "./Footer.module.css";
 
@@ -13,20 +13,20 @@ const Footer = () => {
           {/* Linke Spalte: Copyright */}
           <Col
             xs={12}
-            md={4}
+            md={6}
             className={styles.footerLeft}>
             <Link
               to="/copyright"
               className={styles.copyrightLink}>
-              © {new Date().getFullYear()} {cvData.name} – Alle rechtlichen Hinweise
+              © {new Date().getFullYear()} {cvData.name}
             </Link>
           </Col>
 
-          {/* Mittlere Spalte: Social Media Icons */}
+          {/* Rechte Spalte: Social & Kontakt Icons */}
           <Col
             xs={12}
-            md={4}
-            className={styles.footerMiddle}>
+            md={6}
+            className={styles.footerRight}>
             <div className={styles.socialIcons}>
               <a
                 href={cvData.linkedin}
@@ -42,23 +42,18 @@ const Footer = () => {
                 title="GitHub">
                 <FaGithub />
               </a>
-            </div>
-          </Col>
-
-          {/* Rechte Spalte: Kontakt */}
-          <Col
-            xs={12}
-            md={4}
-            className={styles.footerRight}>
-            <div className={styles.contactBlock}>
-              <span className={styles.contactTitle}>Telefon: </span>
-              <span className={styles.contactInfo}>{cvData.phone}</span>
-            </div>
-            <div className={styles.contactBlock}>
-              <span className={styles.contactTitle}>E-Mail: </span>
-              <span className={styles.contactInfo}>
-                <a href={`mailto:${cvData.email}`}>{cvData.email}</a>
-              </span>
+              <a
+                href={`mailto:${cvData.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Email">
+                <FaEnvelope />
+              </a>
+              <a
+                href={`tel:${cvData.phone}`}
+                title="Telefon">
+                <FaPhone />
+              </a>
             </div>
           </Col>
         </Row>
