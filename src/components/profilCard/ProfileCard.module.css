@@ -1,14 +1,13 @@
 .cardContainer {
-  max-width: 20rem;
   margin: 0 auto;
-  background-color: transparent;
-  border: none;
-  padding-top: 25px;
+  background-color: var(--default-beige-color);
+  padding-top: 45px;
+  width: 400px;
 }
 
 .imageWrapper {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   border: 1px solid var(--background-light-blue-color);
   border-radius: 50%;
@@ -46,4 +45,24 @@
 
 .cardFooter a {
   color: var(--font-dark-grey-color);
+  text-decoration: none;
+}
+
+.cardFooter a:hover {
+  color: var(--font-light-grey-color);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    position: absolute;
+    width: 350px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 45px;
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
 }

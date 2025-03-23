@@ -19,29 +19,29 @@ body {
 }
 
 :root {
-  /* Standardfarben (Light Mode) */
-  --default-blue-color: #0052cc;         /* Ein tiefes Royal Blue als Hauptakzent */
-  --default-grey-color: #8a8d91;          /* Ein neutraleres Grau */
-  --default-white-color: #ffffff;         /* Weiß bleibt unverändert */
-  --default-beige-color: #fdf5e6;         /* Ein warmes Off-White (Old Lace) */
+  --default-blue-color: #0052cc;
+  --default-grey-color: #8a8d91;
+  --default-white-color: #ffffff;
+  --default-beige-color: #fdf5e6;
 
-  --font-dark-grey-color: #333333;        /* Dunkler, gut lesbarer Text */
-  --font-light-grey-color: #757575;       /* Für sekundären Text */
+  --font-dark-grey-color: #333333;
+  --font-light-grey-color: #757575;
 
-  --background-beige-color: #e8e3d3;       /* Warmer, sanfter Hintergrund für Bereiche */
-  --background-light-beige-color: #f9f6f1; /* Sehr heller Beige-Ton, ideal für Karten */
-  --background-light-blue-color: #d0e1ff;  /* Sehr sanftes Blau als Akzent */
-  --background-blue-color: #0052cc;       /* Konsistent zum Hauptakzent */
+  --background-beige-color: #e8e3d3;
+  --background-light-beige-color: #f9f6f1;
+  --background-light-blue-color: #d0e1ff;
+  --background-blue-color: #0052cc;
 
-  --button-blue-color: #0052cc;           /* Einheitlich mit dem Hauptakzent */
-  --button-blue-hover-color: #003a99;     /* Dunklerer Blauton beim Hover */
-  --button-blue-border-color: #003a99;    /* Für klare Button-Konturen */
+  --button-blue-color: #0052cc;
+  --button-blue-hover-color: #003a99;
+  --button-blue-border-color: #003a99;
 
-  --detail-blue-color: #0052cc;           /* Einheitlich mit dem Hauptakzent */
-  --deatil-grey-color: #8a8d91;           /* Passend zum Default-Grey */
-  --detail-white-color: #ffffff;          /* Weiß */
-  --detail-beige-color: #fdf5e6;          /* Einheitlich mit dem Default-Beige */
+  --detail-blue-color: #3366ff;
+  --detail-grey-color: #6b6d70;
+  --detail-white-color: #ffffff;
+  --detail-beige-color: #f7e9d7;
 }
+
 
 #root {
   display: flex;

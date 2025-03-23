@@ -1,9 +1,7 @@
 .leftHalf {
-  background-color: var(--background-light-beige-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .rightHalf {
@@ -15,17 +13,15 @@
 }
 
 .contentWrapper {
+  position: relative;
   text-align: center;
   max-width: 400px;
   margin: auto;
 }
 
- @media screen and (max-width: 991.98px) {
-
-  .leftHalf {
-
+@media screen and (max-width: 768px) {
+  .rightHalf {
+    margin-top: 380px;
   }
-
-
 
 }
