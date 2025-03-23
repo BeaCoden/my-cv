@@ -58,7 +58,6 @@
 }
 
 @media screen and (max-width: 991.98px) {
-
   .navbar {
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +68,6 @@
   .customToggle {
     display: flex;
     position: fixed;
-    top: 1rem;
     right: 1rem;
     z-index: 10000;
     color: var(--font-dark-grey-color);

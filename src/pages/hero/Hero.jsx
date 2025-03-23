@@ -20,8 +20,8 @@ const Hero = () => {
     <section>
       <Container
         fluid
-        className="p-0 h-100">
-        <Row className="h-100 m-0 p-0 flex-wrap">
+        className="p-0">
+        <Row className="m-0 p-0 flex-wrap">
           <Col
             xs={12}
             md={6}
