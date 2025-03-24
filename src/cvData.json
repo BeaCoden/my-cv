@@ -1,39 +1,76 @@
 {
   "name": "Bea Pitzschke",
-  "title": "Junior Frontend Developer",
-  "location": "Berlin, Deutschland",
+  "title": {
+    "de": "Junior Frontend Entwicklerin",
+    "en": "Junior Frontend Developer"
+  },
+  "location": {
+    "de": "Berlin, Deutschland",
+    "en": "Berlin, Germany"
+  },
   "phone": "0176 64 38 54 97",
   "email": "bea.pitzschke.coden@gmail.com",
   "linkedin": "https://www.linkedin.com/in/beapitzschke",
   "github": "https://github.com/BeaCoden",
   "profile_image": "/img/bea.png",
-  "about": "Ich entwickle moderne Frontends mit Fokus auf sauberen Code und intuitive UI. Mein Background im Gesundheitswesen hat mich analytisch und strukturiert arbeiten lassen – jetzt baue ich mit React.js Anwendungen, die klar, schnell und funktional sind. Ich mag es, Designs in Code zu übersetzen, Probleme zu lösen und mich in neue Technologien einzuarbeiten.",
+  "about": {
+    "de": "Ich entwickle moderne Frontends mit Fokus auf sauberen Code und intuitive UI. Mein Background im Gesundheitswesen hat mich analytisch und strukturiert arbeiten lassen – jetzt baue ich mit React.js Anwendungen, die klar, schnell und funktional sind. Ich mag es, Designs in Code zu übersetzen, Probleme zu lösen und mich in neue Technologien einzuarbeiten.",
+    "en": "I develop modern frontends with a focus on clean code and intuitive UI. My background in healthcare has taught me to work analytically and structurally – now I build React.js applications that are clear, fast, and functional. I enjoy translating designs into code, solving problems, and learning new technologies."
+  },
   "certificates": [
     {
-      "date": "Januar 2025",
+      "date": {
+        "de": "Januar 2025",
+        "en": "January 2025"
+      },
       "title": "Udemy React.js & TypeScript",
       "link": "https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
     },
     {
-      "date": "Januar 2025",
+      "date": {
+        "de": "Januar 2025",
+        "en": "January 2025"
+      },
       "title": "Udemy HTML5 & CSS3",
       "link": "https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
     },
     {
-      "date": "April - Juli 2023",
+      "date": {
+        "de": "April - Juli 2023",
+        "en": "April - July 2023"
+      },
       "title": "Coding Bootcamp Europe - Webdeveloper Frontend",
       "link": "./src/Webdevelopment-Zertifikat.png"
     },
     {
-      "date": "September 2017 - August 2021",
+      "date": {
+        "de": "September 2017 - August 2021",
+        "en": "September 2017 - August 2021"
+      },
       "title": "Orthopädie-Technik-Mechanikerin"
     },
     {
-      "date": "September 2003 - August 2008",
+      "date": {
+        "de": "September 2003 - August 2008",
+        "en": "September 2003 - August 2008"
+      },
       "title": "Kauffrau im Gesundheitswesen"
     }
   ],
-  "languages": [{ "name": "Deutsch" }, { "name": "Englisch" }],
+  "languages": [
+    {
+      "name": {
+        "de": "Deutsch",
+        "en": "German"
+      }
+    },
+    {
+      "name": {
+        "de": "Englisch",
+        "en": "English"
+      }
+    }
+  ],
   "skills": {
     "frontend": [
       "HTML & CSS (Flexbox, Grid)",
@@ -48,85 +85,166 @@
       "Swiper"
     ],
     "backend": ["REST-APIs & JSON", "Axios", "Edamam API", "Express.js", "Node.js", "PostgreSQL"],
-    "tools": ["Git & GitHub (CI/CD)", "npm & moderne Webtools", "Agile Methoden (SCRUM, Kanban)"],
-    "soft": ["Teamplayer", "Lösungsorientiert", "Strukturiert", "Anpassungsfähig", "Kommunikationsstark"]
+    "tools": {
+      "de": ["Git & GitHub (CI/CD)", "npm & moderne Webtools", "Agile Methoden (SCRUM, Kanban)"],
+      "en": ["Git & GitHub (CI/CD)", "npm & modern web tools", "Agile methods (SCRUM, Kanban)"]
+    },
+    "soft": {
+      "de": ["Teamplayer", "Lösungsorientiert", "Strukturiert", "Anpassungsfähig", "Kommunikationsstark"],
+      "en": ["Team player", "Solution-oriented", "Structured", "Adaptable", "Strong communicator"]
+    }
   },
   "experience": [
     {
       "date": "Nov 2023 - Aug 2024",
       "company": "N3XTUP GmbH",
       "link": "https://n3xtup.de/",
-      "position": "Junior Frontend Developer",
-      "description": "Entwicklung einer Hausverwaltungssoftware mit React.js, JavaScript & Bootstrap. Zusammenarbeit mit Backend-Team zur Integration von REST-APIs."
+      "position": {
+        "de": "Junior Frontend Developer",
+        "en": "Junior Frontend Developer"
+      },
+      "description": {
+        "de": "Entwicklung einer Hausverwaltungssoftware mit React.js, JavaScript & Bootstrap. Zusammenarbeit mit Backend-Team zur Integration von REST-APIs.",
+        "en": "Development of a property management software using React.js, JavaScript & Bootstrap. Collaboration with the backend team to integrate REST APIs."
+      }
     },
     {
       "date": "Sep 2017 - Aug 2022",
       "company": "FUGH Med. Pflegetechnik GmbH & Co.KG",
-      "position": "Orthopädietechnik-Mechanikerin",
-      "description": "Technische Anpassung und Optimierung von Hilfsmitteln für Patienten. Enge Zusammenarbeit mit Ärzten und Physiotherapeuten, um maßgeschneiderte Lösungen zu entwickeln. Detailorientiertes Arbeiten und präzise Umsetzung von Anforderungen, was mir heute hilft, komplexe Softwarelogik in sauberen Code zu übertragen."
+      "position": {
+        "de": "Orthopädietechnik-Mechanikerin",
+        "en": "Orthopedic Technician"
+      },
+      "description": {
+        "de": "Technische Anpassung und Optimierung von Hilfsmitteln für Patienten. Enge Zusammenarbeit mit Ärzten und Physiotherapeuten, um maßgeschneiderte Lösungen zu entwickeln. Detailorientiertes Arbeiten und präzise Umsetzung von Anforderungen, was mir heute hilft, komplexe Softwarelogik in sauberen Code zu übertragen.",
+        "en": "Technical adjustment and optimization of medical aids. Close collaboration with doctors and physiotherapists to develop tailored solutions. Detail-oriented work and precise implementation of requirements, which helps me translate complex software logic into clean code today."
+      }
     },
     {
       "date": "Sep 2003 - Aug 2017",
       "company": "FUGH Med. Pflegetechnik GmbH & Co.KG",
-      "position": "Kauffrau im Gesundheitswesen - Assistenz der Geschäftsführung",
-      "description": "Organisation und Verwaltung in medizinischen Einrichtungen. Analysieren und Optimieren von Verwaltungs- & Vertragsprozessen – eine Fähigkeit, die mir heute beim strukturierten Arbeiten im Softwareentwicklungsprozess zugutekommt."
+      "position": {
+        "de": "Kauffrau im Gesundheitswesen - Assistenz der Geschäftsführung",
+        "en": "Healthcare Business Administrator - Executive Assistant"
+      },
+      "description": {
+        "de": "Organisation und Verwaltung in medizinischen Einrichtungen. Analysieren und Optimieren von Verwaltungs- & Vertragsprozessen – eine Fähigkeit, die mir heute beim strukturierten Arbeiten im Softwareentwicklungsprozess zugutekommt.",
+        "en": "Organization and management in healthcare facilities. Analysis and optimization of administrative and contractual processes – a skill that supports my structured approach in the software development process today."
+      }
     }
   ],
   "education": [
     {
       "date": "Jan 2025",
-      "title": "Udemy React.js & TypeScript",
+      "title": {
+        "de": "Udemy React.js & TypeScript",
+        "en": "Udemy React.js & TypeScript"
+      },
       "link": "https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
     },
     {
       "date": "Jan 2025",
-      "title": "Udemy HTML5 & CSS3",
+      "title": {
+        "de": "Udemy HTML5 & CSS3",
+        "en": "Udemy HTML5 & CSS3"
+      },
       "link": "https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
     },
     {
       "date": "April - Juli 2023",
-      "title": "Coding Bootcamp Europe - Webdeveloper Frontend",
+      "title": {
+        "de": "Coding Bootcamp Europe - Webdeveloper Frontend",
+        "en": "Coding Bootcamp Europe - Frontend Web Developer"
+      },
       "link": "/img/Webdevelopment-Zertifikat.png"
     },
     {
       "date": "September 2017 - August 2021",
-      "title": "Orthopädie-Technik-Mechanikerin",
-      "link": "Nachweis auf Anfrage"
+      "title": {
+        "de": "Orthopädie-Technik-Mechanikerin",
+        "en": "Orthopedic Technician"
+      },
+      "link": {
+        "de": "Nachweis auf Anfrage",
+        "en": "Proof on request"
+      }
     },
     {
       "date": "September 2003 - August 2008",
-      "title": "Kauffrau im Gesundheitswesen",
-      "link": "Nachweis auf Anfrage"
+      "title": {
+        "de": "Kauffrau im Gesundheitswesen",
+        "en": "Healthcare Business Administrator"
+      },
+      "link": {
+        "de": "Nachweis auf Anfrage",
+        "en": "Proof on request"
+      }
     }
   ],
   "projects": [
     {
-      "date": "ongoing - seit Januar 2025",
-      "title": "News-Web-App",
+      "date": {
+        "de": "in Arbeit - seit Januar 2025",
+        "en": "In progress - since January 2025"
+      },
+      "title": {
+        "de": "News-Web-App",
+        "en": "News Web App"
+      },
       "link": "https://github.com/BeaCoden/News-Web-App",
       "techstack": "React.js, React Router, Axios, Framer Motion, Radix UI, Stitches, Swiper",
-      "description": "Entwicklung einer modernen News-Web-App mit React.js zur Anzeige von aktuellen Nachrichten aus verschiedenen Quellen. Integration von News-APIs für Echtzeit-Nachrichtenaktualisierungen. Implementierung von Filter- und Suchfunktionen für personalisierte Nachrichtenvorschläge. Optimierung der UI für mobile und Desktop-Geräte mittels responsive Design. Fokus auf Performance-Optimierung und State-Management für eine reibungslose Nutzererfahrung."
+      "description": {
+        "de": "Entwicklung einer modernen News-Web-App mit React.js zur Anzeige von aktuellen Nachrichten aus verschiedenen Quellen. Integration von News-APIs für Echtzeit-Nachrichtenaktualisierungen. Implementierung von Filter- und Suchfunktionen für personalisierte Nachrichtenvorschläge. Optimierung der UI für mobile und Desktop-Geräte mittels responsive Design. Fokus auf Performance-Optimierung und State-Management für eine reibungslose Nutzererfahrung.",
+        "en": "Development of a modern news web app using React.js to display current news from various sources. Integration of news APIs for real-time updates, implementation of filtering and search functions for personalized news recommendations, and UI optimization for both mobile and desktop devices using responsive design. Focus on performance optimization and state management for a smooth user experience."
+      }
     },
     {
-      "date": "September 2024 - März 2025",
-      "title": "IssIdee - Rezept-Finder-App",
+      "date": {
+        "de": "September 2024 - März 2025",
+        "en": "September 2024 - March 2025"
+      },
+      "title": {
+        "de": "IssIdee - Rezept-Finder-App",
+        "en": "IssIdee - Recipe Finder App"
+      },
       "link": "https://issidee.vercel.app/",
       "techstack": "React.js, CSS, Edamam API",
-      "description": "Entwicklung einer interaktiven Rezept-Finder-App mit React.js zur einfachen Suche nach Rezepten basierend auf Zutaten und Mahlzeiten. Integration der Edamam API zur Bereitstellung von Echtzeit-Rezeptdaten. Implementierung einer intuitiven Filter- und Suchfunktion für personalisierte Rezeptvorschläge. Optimierung der UI für mobile und Desktop-Geräte mittels responsive Design. Fokus auf Performance-Optimierung und State-Management für eine reibungslose Nutzererfahrung."
+      "description": {
+        "de": "Entwicklung einer interaktiven Rezept-Finder-App mit React.js zur einfachen Suche nach Rezepten basierend auf Zutaten und Mahlzeiten. Integration der Edamam API zur Bereitstellung von Echtzeit-Rezeptdaten. Implementierung einer intuitiven Filter- und Suchfunktion für personalisierte Rezeptvorschläge. Optimierung der UI für mobile und Desktop-Geräte mittels responsive Design. Fokus auf Performance-Optimierung und State-Management für eine reibungslose Nutzererfahrung.",
+        "en": "Development of an interactive recipe finder app using React.js for easy searching of recipes based on ingredients and meals. Integration of the Edamam API for real-time recipe data, implementation of intuitive filtering and search functions for personalized recipe suggestions, and UI optimization for both mobile and desktop devices using responsive design. Focus on performance optimization and state management for a smooth user experience."
+      }
     },
     {
-      "date": "November 2023 - August 2024",
-      "title": "Hausverwaltungssoftware - N3XTUP GmbH",
+      "date": {
+        "de": "November 2023 - August 2024",
+        "en": "November 2023 - August 2024"
+      },
+      "title": {
+        "de": "Hausverwaltungssoftware - N3XTUP GmbH",
+        "en": "Property Management Software - N3XTUP GmbH"
+      },
       "link": "https://n3xtup.de/",
       "techstack": "PostgreSQL, Express.js, React.js, TypeScript, CSS3, Node",
-      "description": "Frontend fokusierte Entwicklung einer modernen Hausverwaltungssoftware mit React.js und TypeScript. Umsetzung wiederverwendbarer UI-Komponenten für eine intuitive Benutzerführung und verbesserte User Experience (UX). Integration von REST-APIs für eine effiziente Datenverarbeitung und Echtzeit-Updates. Enge Zusammenarbeit mit Backend-Entwicklern zur Optimierung der Performance und Skalierbarkeit der Anwendung. Anwendung von agilen Methoden (Scrum, Kanban) für eine strukturierte Entwicklung."
+      "description": {
+        "de": "Frontend-fokussierte Entwicklung einer modernen Hausverwaltungssoftware mit React.js und TypeScript. Umsetzung wiederverwendbarer UI-Komponenten für eine intuitive Benutzerführung und verbesserte User Experience (UX). Integration von REST-APIs für eine effiziente Datenverarbeitung und Echtzeit-Updates. Enge Zusammenarbeit mit Backend-Entwicklern zur Optimierung der Performance und Skalierbarkeit der Anwendung. Anwendung von agilen Methoden (Scrum, Kanban) für eine strukturierte Entwicklung.",
+        "en": "Frontend-focused development of a modern property management software using React.js and TypeScript. Implementation of reusable UI components for intuitive user guidance and improved user experience (UX). Integration of REST APIs for efficient data processing and real-time updates. Close collaboration with backend developers to optimize the performance and scalability of the application. Application of agile methods (Scrum, Kanban) for structured development."
+      }
     },
     {
-      "date": "Juli 2023",
-      "title": "Lost & Found App - Bootcamp Abschlussprojekt",
+      "date": {
+        "de": "Juli 2023",
+        "en": "July 2023"
+      },
+      "title": {
+        "de": "Lost & Found App - Bootcamp Abschlussprojekt",
+        "en": "Lost & Found App - Bootcamp Final Project"
+      },
       "link": "https://cbe-lostandfound.netlify.app/",
       "techstack": "Vue.js, CSS, Pinia",
-      "description": "Mitarbeit an der Entwicklung einer Lost & Found Web-App zur Meldung und Suche nach verlorenen Gegenständen. Umsetzung einer benutzerfreundlichen UI mit Vue.js und Pinia für effizientes State-Management. Implementierung von Filter- und Suchfunktionen zur schnellen Objektsuche. Anwendung agiler Entwicklungsmethoden zur iterativen Verbesserung der App."
+      "description": {
+        "de": "Mitarbeit an der Entwicklung einer Lost & Found Web-App zur Meldung und Suche nach verlorenen Gegenständen. Umsetzung einer benutzerfreundlichen UI mit Vue.js und Pinia für effizientes State-Management. Implementierung von Filter- und Suchfunktionen zur schnellen Objektsuche. Anwendung agiler Entwicklungsmethoden zur iterativen Verbesserung der App.",
+        "en": "Contribution to the development of a lost & found web app for reporting and searching for lost items. Implementation of a user-friendly UI with Vue.js and Pinia for efficient state management. Implementation of filtering and search functions for quick item lookup. Application of agile development methods for iterative improvement of the app."
+      }
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Portfolio",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact",
+    "resume": "Resume",
+    "copyright": "Copyright"
+  }
+}

@@ -5,10 +5,8 @@ import styles from "./Breadcrumbs.module.css";
 
 const Breadcrumbs = () => {
   const location = useLocation();
-  // Splitte den Pfad
   const pathnames = location.pathname.split("/").filter((x) => x);
 
-  // Mapping
   const breadcrumbNames = {
     about: "Über mich",
     portfolio: "Portfolio",
