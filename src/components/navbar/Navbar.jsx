@@ -2,9 +2,9 @@ import React, { useState, useContext } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Sling as Hamburger } from "hamburger-react";
 import { BsCodeSlash } from "react-icons/bs";
-import styles from "./Navbar.module.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
+import styles from "./Navbar.module.css";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
@@ -69,34 +69,19 @@ const Navigation = () => {
               Kontakt
             </Nav.Link>
           </Nav>
-          {/* Language- und Theme-Switcher (rechts in der Navbar) */}
+
           <div className="d-flex align-items-center ms-auto">
-            {/* Sprache umschalten */}
             <button
+              className={styles.toggleLanguage}
               type="button"
-              onClick={toggleLanguage}
-              style={{
-                marginRight: "1rem",
-                background: "transparent",
-                border: "1px solid var(--button-blue-border-color)",
-                borderRadius: "4px",
-                padding: "0.25rem 0.5rem",
-                cursor: "pointer",
-              }}>
+              onClick={toggleLanguage}>
               {language === "de" ? "DE" : "EN"}
             </button>
 
-            {/* Theme umschalten */}
             <button
+              className={styles.toggleTheme}
               type="button"
-              onClick={toggleTheme}
-              style={{
-                background: "transparent",
-                border: "1px solid var(--button-blue-border-color)",
-                borderRadius: "4px",
-                padding: "0.25rem 0.5rem",
-                cursor: "pointer",
-              }}>
+              onClick={toggleTheme}>
               {theme === "light" ? "Light" : "Dark"}
             </button>
           </div>
