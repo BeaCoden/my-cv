@@ -18,6 +18,7 @@ body {
   font-size: 24px;
 }
 
+/* Light Theme */
 :root {
   --default-blue-color: #0052cc;
   --default-grey-color: #8a8d91;
@@ -42,6 +43,32 @@ body {
   --detail-beige-color: #f7e9d7;
 }
 
+/* Dark Theme */
+[data-theme="dark"] {
+  --default-blue-color: #0a84ff; /* Beispielhafter Blauton */
+  --default-grey-color: #cccccc;
+  --default-white-color: #1c1c1c;
+  --default-beige-color: #333333;
+
+  --font-dark-grey-color: #f0f0f0;
+  --font-light-grey-color: #cccccc;
+
+  --background-beige-color: #2b2b2b;
+  --background-light-beige-color: #3f3f3f;
+  --background-light-blue-color: #2f4e66;
+  --background-blue-color: #0a84ff;
+
+  --button-blue-color: #0a84ff;
+  --button-blue-hover-color: #006bbf;
+  --button-blue-border-color: #006bbf;
+
+  --detail-blue-color: #66ccff;
+  --detail-grey-color: #999999;
+  --detail-white-color: #1c1c1c;
+  --detail-beige-color: #4d4d4d;
+}
+
+
 #root {
   display: flex;
   flex-direction: column;
@@ -53,7 +80,7 @@ body {
   min-height: 100vh;
 }
 
-/* .mainContent {
+.mainContent {
   flex: 1;
   display: flex;
-} */
+}

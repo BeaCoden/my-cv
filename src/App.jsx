@@ -28,7 +28,6 @@ function App() {
       <Router>
         <Navigation />
         <ConditionalBreadcrumbs />
-
         <main className="mainContent">
           <Routes>
             <Route
