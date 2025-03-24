@@ -1,22 +1,18 @@
+// Beispiel ThemeContext
 import React, { createContext, useState, useEffect } from "react";
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light"); // "light" oder "dark"
+  const [theme, setTheme] = useState(() => {
+    // Beim ersten Laden: aus localStorage lesen, sonst "light"
+    const saved = localStorage.getItem("myAppTheme");
+    return saved || "light";
+  });
 
-  // Optional: Theme in localStorage speichern/lesen
-  // useEffect(() => {
-  //   const savedTheme = localStorage.getItem("appTheme");
-  //   if (savedTheme) setTheme(savedTheme);
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("appTheme", theme);
-  // }, [theme]);
-
-  // Für ein globales CSS-Switching kannst du ein data-Attribut auf <body> setzen
   useEffect(() => {
+    // Jedes Mal, wenn sich theme ändert, in localStorage speichern
+    localStorage.setItem("myAppTheme", theme);
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
 

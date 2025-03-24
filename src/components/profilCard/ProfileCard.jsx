@@ -5,10 +5,6 @@ import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import cvData from "../../cvData.json";
 import styles from "./ProfileCard.module.css";
 
-// Unsere getrennten Switcher
-import ThemeSwitcher from "../themeSwitch/ThemeSwitcher";
-import LanguageSwitcher from "../languageSwitch/LanguageSwitcher";
-
 const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
   return (
     <Card className={styles.cardContainer}>
@@ -21,12 +17,7 @@ const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
         />
       </div>
       <Card.Body>
-        <Card.Title className="mt-3 mb-3 d-flex justify-content-between align-items-center">
-          <div className="d-flex gap-2">
-            <LanguageSwitcher />
-            <ThemeSwitcher />
-          </div>
-        </Card.Title>
+        <Card.Title className="mt-3 mb-3 d-flex justify-content-between align-items-center"></Card.Title>
 
         <div className="d-flex justify-content-center">
           <Button
