@@ -4,12 +4,16 @@ import { Sling as Hamburger } from "hamburger-react";
 import { BsCodeSlash } from "react-icons/bs";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LanguageContext } from "../../context/LanguageContext";
+import { useTranslation } from "react-i18next";
 import styles from "./Navbar.module.css";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
   const { language, toggleLanguage } = useContext(LanguageContext);
+
+  // useTranslation hook
+  const { t } = useTranslation();
 
   return (
     <Navbar
@@ -36,37 +40,37 @@ const Navigation = () => {
 
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className={`${isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}`}>
+          className={isOpen ? styles.navbarCollapseShow : styles.navbarCollapse}>
           <Nav>
             <Nav.Link
               href="/"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Über mich
+              {t("navbar.navItem1")}
             </Nav.Link>
             <Nav.Link
               href="/portfolio"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Portfolio
+              {t("navbar.navItem2")}
             </Nav.Link>
             <Nav.Link
               href="/resume"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Lebenslauf
+              {t("navbar.navItem3")}
             </Nav.Link>
             <Nav.Link
               href="/skills"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Skills
+              {t("navbar.navItem4")}
             </Nav.Link>
             <Nav.Link
               href="/contact"
               onClick={() => setOpen(false)}
               className={styles.navLink}>
-              Kontakt
+              {t("navbar.navItem5")}
             </Nav.Link>
           </Nav>
 
