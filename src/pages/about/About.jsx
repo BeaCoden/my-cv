@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { LanguageContext } from "../../context/LanguageContext";
 import data from "../../cvData.json";
-import styles from "./About.module.css";
 
 const About = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section
       id="about"
@@ -11,8 +13,8 @@ const About = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Über mich</h2>
-            <p>{data.about}</p>
+            <h2>{language === "de" ? "Über mich" : "About me"}</h2>
+            <p>{data.about[language]}</p>
           </Col>
         </Row>
       </Container>

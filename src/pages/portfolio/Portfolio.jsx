@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+import { LanguageContext } from "../../context/LanguageContext";
 import data from "../../cvData.json";
 import { MdWeb } from "react-icons/md";
 import styles from "./Portfolio.module.css";
 
 const Portfolio = () => {
   const { projects } = data;
+  const { t } = useTranslation();
+  const { language } = useContext(LanguageContext);
 
   return (
     <section
@@ -14,7 +18,7 @@ const Portfolio = () => {
       <Container>
         <h2>
           <MdWeb className={styles.icon} />
-          Portfolio
+          {t("portfolio.header")}
         </h2>
         <Row>
           {projects.map((project, index) => (
@@ -25,18 +29,19 @@ const Portfolio = () => {
               key={index}>
               <Card>
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">{project.date}</Card.Subtitle>
-                  <Card.Text>{project.description}</Card.Text>
+                  <Card.Title>{project.title[language]}</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">{project.date[language]}</Card.Subtitle>
+                  <Card.Text>{project.description[language]}</Card.Text>
                   {project.link && (
                     <Card.Link
                       href={project.link}
-                      target="_blank">
-                      Zum Projekt
+                      target="_blank"
+                      rel="noreferrer">
+                      {t("portfolio.projectLink")}
                     </Card.Link>
                   )}
                   <br />
-                  <strong>Tech Stack:</strong> {project.techstack}
+                  <strong>{t("portfolio.techStackLabel")}</strong> {project.techstack}
                 </Card.Body>
               </Card>
             </Col>

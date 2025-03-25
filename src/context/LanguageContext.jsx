@@ -1,22 +1,15 @@
 import React, { createContext, useState } from "react";
+import i18n from "../i18n";
 
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState("de"); // "de" oder "en"
-
-  // Optional: Sprache in localStorage speichern/lesen
-  // useEffect(() => {
-  //   const savedLanguage = localStorage.getItem("appLanguage");
-  //   if (savedLanguage) setLanguage(savedLanguage);
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("appLanguage", language);
-  // }, [language]);
+  const [language, setLanguage] = useState("de");
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "de" ? "en" : "de"));
+    const newLanguage = language === "de" ? "en" : "de";
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   return <LanguageContext.Provider value={{ language, toggleLanguage }}>{children}</LanguageContext.Provider>;

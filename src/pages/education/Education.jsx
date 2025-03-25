@@ -1,37 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { LanguageContext } from "../../context/LanguageContext";
 import data from "../../cvData.json";
-import styles from "./Education.module.css";
 
 const Education = () => {
   const { education } = data;
+  const { language } = useContext(LanguageContext);
 
   return (
     <section
       id="education"
       className="py-5">
       <Container>
-        <h2>Ausbildung</h2>
+        <h2>{language === "de" ? "Ausbildung" : "Education"}</h2>
         {education.map((edu, index) => (
           <Row
             key={index}
             className="mb-3">
             <Col>
-              <h5>
-                {edu.degree} in {edu.subject}
-              </h5>
+              <h5>{edu.title[language]}</h5>
               <p>
-                <strong>Zeitraum:</strong> {edu.date}
+                <strong>{language === "de" ? "Zeitraum:" : "Period:"}</strong> {edu.date}
               </p>
-              <p>
-                <strong>Ort:</strong> {edu.location}
-              </p>
-              <p>
-                <strong>Beschreibung:</strong> {edu.description}
-              </p>
-              {edu.link && (
+              {typeof edu.link === "string" ? (
                 <p>
-                  <strong>Website: </strong>
+                  <strong>{language === "de" ? "Webseite:" : "Website:"}</strong>{" "}
                   <a
                     href={edu.link}
                     target="_blank"
@@ -39,7 +32,11 @@ const Education = () => {
                     {edu.link}
                   </a>
                 </p>
-              )}
+              ) : edu.link && typeof edu.link === "object" ? (
+                <p>
+                  <strong>{language === "de" ? "Webseite:" : "Website:"}</strong> {edu.link[language]}
+                </p>
+              ) : null}
             </Col>
           </Row>
         ))}

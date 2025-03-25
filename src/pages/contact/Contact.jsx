@@ -21,7 +21,7 @@ const Contact = () => {
               <strong>E-Mail:</strong> <a href={`mailto:${email}`}>{email}</a>
             </p>
             <p>
-              <strong>LinkedIn:</strong>{" "}
+              <strong>LinkedIn:</strong>
               <a
                 href={linkedin}
                 target="_blank"
@@ -30,7 +30,7 @@ const Contact = () => {
               </a>
             </p>
             <p>
-              <strong>GitHub:</strong>{" "}
+              <strong>GitHub:</strong>
               <a
                 href={github}
                 target="_blank"

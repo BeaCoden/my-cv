@@ -9,5 +9,81 @@
     "contact": "Contact",
     "resume": "Resume",
     "copyright": "Copyright"
+  },
+  "navbar": {
+    "navItem1": "About me",
+    "navItem2": "Portfolio",
+    "navItem3": "Resume",
+    "navItem4": "Skills",
+    "navItem5": "Contact"
+  },
+  "profilCard": {
+    "btn1": "CV download",
+    "btn2": "CV print"
+  },
+  "resume": {
+    "sectionExperience": "Experience",
+    "sectionEducation": "Education"
+  },
+  "about": {
+    "h2Title": "About me"
+  },
+  "contact": {
+    "h2Title": "Contact",
+    "paragraph": "Telephone"
+  },
+  "copyright": {
+    "header": "Legal Information",
+    "section1": {
+      "title": "1. Private Use",
+      "text": "This website (CV/portfolio) is operated solely for private and non-commercial purposes. It serves as a demo project for applying as a Junior Frontend Developer."
+    },
+    "section2": {
+      "title": "2. Content",
+      "text": "The content of this website has been created with utmost care. However, no guarantee can be given for the accuracy, completeness, and timeliness of the information provided."
+    },
+    "section3": {
+      "title": "3. Disclaimer",
+      "text": "Any liability for damages arising directly or indirectly from the use of this website is excluded unless based on intent or gross negligence."
+    },
+    "section4": {
+      "title": "4. Copyright",
+      "text": "All texts, images, and other content published on this website are my property or have been licensed by me – unless otherwise indicated. Reproduction or use of this content in other publications is not permitted without my explicit consent."
+    },
+    "section5": {
+      "title": "5. Data Protection",
+      "text": "This website does not collect any personal data (e.g., via contact forms or tracking), unless you actively send me an email. In that case, your data will only be used to process your inquiry and will not be passed on to third parties."
+    },
+    "section6": {
+      "title": "6. External Links",
+      "text": "This website may contain links to external third-party websites. I have no control over their content and therefore cannot accept any liability for these external contents. The respective provider or operator of the linked pages is always responsible for their content."
+    },
+    "signature": "Bea Pitzschke – All rights reserved."
+  },
+  "education": {
+    "header": "Education",
+    "dateLabel": "Period:",
+    "locationLabel": "Location:",
+    "descriptionLabel": "Description:",
+    "linkLabel": "Website:"
+  },
+  "experience": {
+    "header": "Experience",
+    "at": "at",
+    "dateLabel": "Period:",
+    "descriptionLabel": "Description:",
+    "linkLabel": "Website:"
+  },
+  "portfolio": {
+    "header": "Portfolio",
+    "projectLink": "View Project",
+    "techStackLabel": "Tech Stack:"
+  },
+  "skills": {
+    "header": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend & APIs",
+    "tools": "Tools & Others",
+    "soft": "Soft Skills"
   }
 }

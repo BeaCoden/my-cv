@@ -1,22 +1,14 @@
 import React from "react";
 import { Breadcrumb, Container, Row, Col } from "react-bootstrap";
 import { useLocation, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import styles from "./Breadcrumbs.module.css";
 
 const Breadcrumbs = () => {
   const location = useLocation();
-  const pathnames = location.pathname.split("/").filter((x) => x);
+  const { t } = useTranslation();
 
-  const breadcrumbNames = {
-    about: "Über mich",
-    portfolio: "Portfolio",
-    experience: "Erfahrung",
-    education: "Abschlüsse",
-    skills: "Skills",
-    contact: "Kontakt",
-    resume: "Lebenslauf",
-    copyright: "Urheberrecht",
-  };
+  const pathnames = location.pathname.split("/").filter((x) => x);
 
   return (
     <Container className="mt-3">
@@ -25,18 +17,17 @@ const Breadcrumbs = () => {
           xs={12}
           md={8}>
           <Breadcrumb className={styles.breadcrumbContainer}>
-            {/* Home */}
             <Breadcrumb.Item
               linkAs={Link}
               linkProps={{ to: "/" }}
               className={styles.breadcrumbItem}>
-              Home
+              {t("breadcrumb.home")}
             </Breadcrumb.Item>
 
-            {/* Dynamische Breadcrumbs */}
             {pathnames.map((value, index) => {
               const to = `/${pathnames.slice(0, index + 1).join("/")}`;
-              const displayName = breadcrumbNames[value] || value;
+              const displayName = t(`breadcrumb.${value}`, { defaultValue: value });
+
               return (
                 <Breadcrumb.Item
                   key={to}

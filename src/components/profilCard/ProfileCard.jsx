@@ -17,8 +17,9 @@ const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
         />
       </div>
       <Card.Body>
-        <Card.Title className="mt-3 mb-3 d-flex justify-content-between align-items-center"></Card.Title>
-
+        <Card.Title className="mt-3 mb-3 d-flex justify-content-between align-items-center">
+          <hr />
+        </Card.Title>
         <div className="d-flex justify-content-center">
           <Button
             variant="primary"

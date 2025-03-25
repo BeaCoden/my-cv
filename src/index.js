@@ -5,6 +5,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./i18n";
 import smoothscroll from "smoothscroll-polyfill";
 
 smoothscroll.polyfill();
