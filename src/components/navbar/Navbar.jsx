@@ -1,18 +1,14 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Sling as Hamburger } from "hamburger-react";
 import { BsCodeSlash } from "react-icons/bs";
-import { ThemeContext } from "../../context/ThemeContext";
-import { LanguageContext } from "../../context/LanguageContext";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../languageSwitch/LanguageSwitcher";
+import ThemeSwitcher from "../themeSwitch/ThemeSwitcher";
 import styles from "./Navbar.module.css";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
-  const { language, toggleLanguage } = useContext(LanguageContext);
-
-  // useTranslation hook
   const { t } = useTranslation();
 
   return (
@@ -73,21 +69,9 @@ const Navigation = () => {
               {t("navbar.navItem5")}
             </Nav.Link>
           </Nav>
-
-          <div className="d-flex align-items-center ms-auto">
-            <button
-              className={styles.toggleLanguage}
-              type="button"
-              onClick={toggleLanguage}>
-              {language === "de" ? "DE" : "EN"}
-            </button>
-
-            <button
-              className={styles.toggleTheme}
-              type="button"
-              onClick={toggleTheme}>
-              {theme === "light" ? "Light" : "Dark"}
-            </button>
+          <div className="d-flex gap-2">
+            <LanguageSwitcher />
+            <ThemeSwitcher />
           </div>
         </Navbar.Collapse>
       </Container>

@@ -1,16 +1,37 @@
 import React, { useContext } from "react";
-import { Button } from "react-bootstrap";
 import { LanguageContext } from "../../context/LanguageContext";
+import { MdOutlineTranslate } from "react-icons/md";
+import { Dropdown } from "react-bootstrap";
 
 const LanguageSwitcher = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <Button
-      variant="outline-primary"
-      onClick={toggleLanguage}>
-      {language === "de" ? "DE" : "EN"}
-    </Button>
+    <Dropdown>
+      {/* Toggle button */}
+      <Dropdown.Toggle
+        variant="outline-primary"
+        className="myLanguageDropdown">
+        <MdOutlineTranslate />
+        {/* {language === "de" ? "DE" : "EN"} */}
+      </Dropdown.Toggle>
+
+      {/* Dropdown menu */}
+      <Dropdown.Menu>
+        <Dropdown.Item
+          onClick={() => {
+            if (language !== "de") toggleLanguage();
+          }}>
+          DE
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => {
+            if (language !== "en") toggleLanguage();
+          }}>
+          EN
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 };
 
