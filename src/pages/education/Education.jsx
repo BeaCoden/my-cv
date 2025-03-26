@@ -20,7 +20,7 @@ const Education = () => {
             <Col>
               <h5>{edu.title[language]}</h5>
               <p>
-                <strong>{language === "de" ? "Zeitraum:" : "Period:"}</strong> {edu.date}
+                <strong>{language === "de" ? "Zeitraum:" : "Period:"}</strong> {edu.date[language]}
               </p>
               {typeof edu.link === "string" ? (
                 <p>

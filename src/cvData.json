@@ -143,7 +143,18 @@
   ],
   "education": [
     {
-      "date": "Jan 2025",
+      "date": {
+        "de": "März 2025",
+        "en": "March 2025"
+      },
+      "title": "Udemy Typescript & React JS",
+      "link": "https://www.udemy.com/certificate/UC-599f521a-7bf3-4597-8d3c-7e03a38ba2a9/"
+    },
+    {
+      "date": {
+        "de": "Januar 2025",
+        "en": "January 2025"
+      },
       "title": {
         "de": "Udemy React.js & TypeScript",
         "en": "Udemy React.js & TypeScript"
@@ -151,7 +162,10 @@
       "link": "https://www.udemy.com/certificate/UC-d627c832-ec97-4aad-b71e-ef8de978eb78/"
     },
     {
-      "date": "Jan 2025",
+      "date": {
+        "de": "Januar 2025",
+        "en": "January 2025"
+      },
       "title": {
         "de": "Udemy HTML5 & CSS3",
         "en": "Udemy HTML5 & CSS3"
@@ -159,7 +173,10 @@
       "link": "https://www.udemy.com/certificate/UC-1928dc3e-3c34-4b64-97ef-c3cc46216488/"
     },
     {
-      "date": "April - Juli 2023",
+      "date": {
+        "de": "April - Juli 2025",
+        "en": "April - July 2025"
+      },
       "title": {
         "de": "Coding Bootcamp Europe - Webdeveloper Frontend",
         "en": "Coding Bootcamp Europe - Frontend Web Developer"
@@ -167,7 +184,10 @@
       "link": "/img/Webdevelopment-Zertifikat.png"
     },
     {
-      "date": "September 2017 - August 2021",
+      "date": {
+        "de": "September 2017 - August 2021",
+        "en": "September 2017 - August 2021"
+      },
       "title": {
         "de": "Orthopädie-Technik-Mechanikerin",
         "en": "Orthopedic Technician"
@@ -178,7 +198,10 @@
       }
     },
     {
-      "date": "September 2003 - August 2008",
+      "date": {
+        "de": "September 2003 - August 2008",
+        "en": "September 2003 - August 2008"
+      },
       "title": {
         "de": "Kauffrau im Gesundheitswesen",
         "en": "Healthcare Business Administrator"

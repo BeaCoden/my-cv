@@ -32,7 +32,7 @@ const Experience = () => {
               </p>
               {exp.link && (
                 <p>
-                  <strong>{t("experience.linkLabel")}</strong>{" "}
+                  <strong>{t("experience.linkLabel")}</strong>
                   <a
                     href={exp.link}
                     target="_blank"
