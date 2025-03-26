@@ -1,11 +1,13 @@
-// src/components/profileCard/ProfileCard.jsx
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import cvData from "../../cvData.json";
 import styles from "./ProfileCard.module.css";
 
 const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
+  const { t } = useTranslation();
+
   return (
     <Card className={styles.cardContainer}>
       <div className={styles.imageWrapper}>
@@ -25,13 +27,13 @@ const ProfileCard = ({ image, name, onDownloadCV, onPrintCV }) => {
             variant="primary"
             className="mx-2"
             onClick={onDownloadCV}>
-            CV download
+            {t("profilCard.btn1")}
           </Button>
           <Button
             variant="secondary"
             className="mx-2"
             onClick={onPrintCV}>
-            CV drucken
+            {t("profilCard.btn2")}
           </Button>
         </div>
       </Card.Body>
