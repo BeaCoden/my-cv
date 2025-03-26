@@ -20,6 +20,14 @@
   "certificates": [
     {
       "date": {
+        "de": "März 2025",
+        "en": "March 2025"
+      },
+      "title": "Udemy Typescript & React JS",
+      "link": "https://www.udemy.com/certificate/UC-599f521a-7bf3-4597-8d3c-7e03a38ba2a9/"
+    },
+    {
+      "date": {
         "de": "Januar 2025",
         "en": "January 2025"
       },
