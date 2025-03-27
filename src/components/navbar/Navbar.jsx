@@ -69,7 +69,7 @@ const Navigation = () => {
               {t("navbar.navItem5")}
             </Nav.Link>
           </Nav>
-          <div className="d-flex gap-2">
+          <div className={styles.navSwitcher}>
             <LanguageSwitcher />
             <ThemeSwitcher />
           </div>

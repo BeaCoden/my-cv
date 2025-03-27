@@ -24,7 +24,7 @@ const Education = () => {
               </p>
               {typeof edu.link === "string" ? (
                 <p>
-                  <strong>{language === "de" ? "Webseite:" : "Website:"}</strong>{" "}
+                  <strong>{language === "de" ? "Webseite:" : "Website:"}</strong>
                   <a
                     href={edu.link}
                     target="_blank"

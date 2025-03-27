@@ -51,10 +51,11 @@
   align-items: center;
 }
 
-@media screen and (min-width: 992px) {
-  .navbarCollapse {
-    display: flex !important;
-  }
+.navSwitcher {
+  display: flex;
+  gap: .75rem;
+  border-left: 2px solid var(--detail-grey-color);
+  padding-left: 35px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -82,7 +83,7 @@
     visibility: hidden;
     transform: translateY(-100%);
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
+  }
 
   .navbarCollapseShow {
     opacity: 1;
@@ -112,5 +113,14 @@
 
   .navbarCollapseShow .navLink:hover {
     color: var(--font-light-grey-color);
+  }
+
+  .navSwitcher {
+    border-top: 2px solid var(--detail-grey-color);
+    display: flex;
+    gap: 2rem;
+    padding-top: 35px;
+    border-left: none;
+    padding-left: 0;
   }
 }
