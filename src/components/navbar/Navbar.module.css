@@ -5,6 +5,7 @@
 
 .containerCustom {
   margin: 0;
+  padding: 0;
 }
 
 .navbarBrandCustom {
@@ -58,7 +59,7 @@
   padding-left: 35px;
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1200px) {
   .navbar {
     flex-direction: row;
     justify-content: space-between;
